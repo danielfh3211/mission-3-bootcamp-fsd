@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register Page</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="Assets/Logo.png" alt="Logo" class="logo" />
+    </header>
+
+    <div class="container">
+      <h2>Pendaftaran Akun</h2>
+      <p>Yuk, daftarkan akunmu sekarang juga!</p>
+      <form>
+        <div class="form-group">
+          <label for="name"
+            >Nama Lengkap <span style="color: red">*</span></label
+          >
+          <input
+            type="name"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail <span style="color: red">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="number-phone">
+            No. Hp <span style="color: red">*</span>
+          </label>
+          <div class="phone-input-group">
+            <div class="country-code-box">
+              <span class="flag-box">
+                <img
+                  src="https://flagcdn.com/id.svg"
+                  alt="ID"
+                  class="flag-icon"
+                />
+              </span>
+              <select
+                id="country-code"
+                name="country-code"
+                required
+                class="country-select"
+              >
+                <option value="+62" selected>+62</option>
+              </select>
+            </div>
+            <input
+              type="tel"
+              id="number-phone"
+              name="number-phone"
+              required
+              autocomplete="tel"
+              class="phone-input"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password"
+            >Kata Sandi <span style="color: red">*</span></label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            autocomplete="current-password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirm-password"
+            >Konfirmasi Kata Sandi <span style="color: red">*</span></label
+          >
+          <input
+            type="confirm-password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            autocomplete="confirm-current-password"
+          />
+        </div>
+        <a href="#" class="forgot-link">Lupa password?</a>
+        <button
+          type="submit"
+          class="btn btn-login"
+          onclick="location.href='login.html'"
+        >
+          Masuk
+        </button>
+        <button
+          type="button"
+          class="btn btn-register"
+          onclick="location.href='register.html'"
+        >
+          Daftar
+        </button>
+        <div class="divider">
+          <span>atau</span>
+        </div>
+        <button type="button" class="btn btn-google">
+          <img
+            src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+            alt="Google Logo"
+          />
+          Masuk dengan Google
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
